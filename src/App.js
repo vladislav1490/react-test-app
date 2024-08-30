@@ -22,7 +22,7 @@ function App() {
       <Router>
         <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
         <Routes>
-          <Route path="/sign_in" element={<SignInPage setIsLoggedIn={setIsLoggedIn} />} />
+          <Route path="" element={<SignInPage setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/main" element={<MainPage />} />
           <Route path="/post/:id" element={<PostDetailPage />} />
         </Routes>

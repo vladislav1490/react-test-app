@@ -10,7 +10,7 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
     if (confirmed) {
       setIsLoggedIn(false);
       localStorage.setItem("isLoggedIn", "false");
-      navigate("/sign_in");
+      navigate("");
     }
   };
 
@@ -21,7 +21,7 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
         {isLoggedIn ? (
           <button className={styles.sign_in} onClick={handleSignOut}>Sign Out</button>
         ) : (
-          <button className={styles.sign_in} onClick={() => navigate("/sign_in")}>Sign In</button>
+          <button className={styles.sign_in} onClick={() => navigate("")}>Sign In</button>
         )}
       </header>
     </div>
