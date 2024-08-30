@@ -1,4 +1,4 @@
-# test-react-app
+# react-test-app
 
 Url: http://localhost:3000
 
